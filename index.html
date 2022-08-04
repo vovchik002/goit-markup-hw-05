@@ -12,6 +12,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css" integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -52,7 +56,7 @@
       <section class="main-heading" >
         <div class="container main-container">
         <h1 class="main-caption">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="main-btn">Замовити послугу</button>
+        <button data-modal-open type="button" class="main-btn">Замовити послугу</button>
       </div>
       </section>
       <section class="section-benefits ">
@@ -106,26 +110,35 @@
         <div class="container">
         <h2 class="developer-heading">Чим ми займаємось</h2>
         <ul class="developer-list list">
-          <li class="developer-item">
+          <li >
+            <div class="developer-item">
             <img
               src="./image/box1.jpg"
               alt="Блоксхеми, кодування на планшеті та macbook"
               width="370"
             />
+            <p class="description-img">Десктопні додатки</p>
+          </div>
           </li>
-          <li class="developer-item">
+          <li >
+            <div class="developer-item">
             <img
               src="./image/box2.jpg"
               alt="Macbook, телефон, розміщення блоків кодування"
               width="370"
             />
+            <p class="description-img">Мобільні додатки</p>
+          </div>
           </li>
-          <li class="developer-item">
+          <li >
+            <div class="developer-item">
             <img
               src="./image/box3.jpg"
               alt="Вибір колбору на планшеті"
               width="370"
             />
+            <p class="description-img">Дизайнерські рішення</p>
+          </div>
           </li>
         </ul>
       </div>
@@ -353,5 +366,13 @@
     
     
     </footer>
+    <div class="backdrop is-hidden " data-modal>
+      <div class="modal">
+        <button data-modal-close type="button" class="close-modal">
+    
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
