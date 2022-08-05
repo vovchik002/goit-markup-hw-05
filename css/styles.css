@@ -631,7 +631,7 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 528px;
-  height: 581px;
+  min-height: 581px;
   background-color: #ffffff;
 }
 .close-modal {
